@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESHIFY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="floating-text">
+            <img src="/assets/images/logo.png" alt="freshify logo" class="logo">
+            <h1>FRESHIFY</h1>
+            <p><h3>Connecting grocers and buyers directly for a seamless shopping experience!</h3></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="authArea" class="mt-4">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" class="form-control mb-2">
+            <input type="password" id="password" placeholder="Password" class="form-control mb-2">
+            <button onclick="login()" class="btn btn-primary">Login</button>
+        </div>
+
+        <div id="productArea" class="mt-4">
+            <h2>Products</h2>
+            <div id="products"></div>
+        </div>
+
+        <div id="feedbackArea" class="mt-4">
+            <h3>Feedback</h3>
+            <textarea id="feedback" class="form-control mb-2" placeholder="Leave your feedback"></textarea>
+            <button onclick="submitFeedback()" class="btn btn-success">Submit Feedback</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
